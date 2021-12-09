@@ -1,0 +1,172 @@
+/*IMPORTAR A FONTE-GOOGLE*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Mono&display=swap');
+
+:root{
+    --font-primary: "Playfair Display", sans-serif;
+    --font-secundary:"Roboto Mono", sans-serif;
+    --orange: #fa6007;
+    --blue: #00285f;
+    --gray: #ededed;
+   
+}
+
+/* RESERTA A PAGINA*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    
+}
+html, body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header{
+    width: 100%;
+    height: 31.25rem;
+    background: var(--orange);
+}
+
+.content{
+    max-width: 62.5rem;
+    min-width: 18.75rem;
+    margin:  0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0.625rem;
+}
+nav{
+    width: 100%;
+    height: 7.813rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 2.438rem;
+    color: var(--blue);
+    cursor: pointer;
+    font-family: var(--font-primary);
+    text-shadow: 0.1rem 0rem 0rem rgb(5, 5, 5);
+
+}
+.logo:hover{
+    opacity: .3;
+    transition: 1s;
+   
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
+ nav ul li{
+     padding: 0.925rem;
+     font-weight: bolder;
+     
+     cursor: pointer;
+ }
+ nav ul li a{
+    color: var(--blue);
+    font-size: 1.2em;
+ }
+ nav ul li span{
+     color: white;
+     
+ }
+ nav ul li a:hover{
+     transition: 1s; 
+     color: white;
+ }
+ nav ul button{
+     cursor: pointer;
+     background: transparent;
+     width: 8rem;
+     color: var(--blue);
+     font-weight: bolder;
+     font-size: 1rem;
+     font-family: var(--font-secundary);
+     margin-left: 1.875rem;
+     border-radius: 1rem 0  2rem;
+     /*border:  0.063rem solid var(--blue);*/
+ }
+nav ul button:hover{
+    color: white;
+    background: var(--blue);
+    transition: 1s;
+
+} 
+
+
+
+.header-block ul .face{
+    cursor: pointer;
+    width: 6%;
+    left: 4%;
+    bottom: -15rem;
+   
+    
+}
+.header-block ul .insta{
+    cursor: pointer;
+    width: 6%;
+    left: 13%;
+    bottom: -15rem;
+   
+}
+.header-block ul .whats{
+    cursor: pointer;
+    width: 6%;
+    left: 22%;
+    bottom: -15rem;
+   
+}
+
+.content .header-block{
+    max-width: 62.5rem;
+    min-width: 18.75rem;
+    height: 28.125rem;
+    background: var(--blue);
+    border-radius: 0.5rem;
+    box-shadow: 1px 0px 10px 0px rgba(0,0,0, 0.5);
+    -webkit-box-shadom: 1px 0px 10px 0px rgba(0,0,0, 0.5);
+    -moz-box-shadom: 1px 0px 10px 0px rgba(0,0,0, 0.5);
+    position: relative;
+    z-index: 10;
+    padding: 0.625rem;
+
+}
+.header-block img{
+    position: absolute;
+    width: 90%;
+    right: -10%;
+    bottom: 2%;
+}
+
+.header-block .text{
+    position: absolute;
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.header-block .text h2 {
+    color: white;
+    margin-bottom: 1.25rem;
+    text-align: right;
+    transform: translateX(-1.25rem);
+    transition: transform 2s;
+
+}
+.header-block .text p{
+    max-width:  280px;
+    color: white;
+    text-align: right;
+    transform: translateX(-1.25rem);
+    transition: transform 1s;
+}

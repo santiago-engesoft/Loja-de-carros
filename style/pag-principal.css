@@ -1,0 +1,358 @@
+/*IMPORTAR A FONTE-GOOGLE*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Mono&display=swap');
+
+:root{
+    --font-primary: "Playfair Display", sans-serif;
+    --font-secundary:"Roboto Mono", sans-serif;
+    --orange: #fa6007;
+    --blue: #00285f;
+    --gray: #ededed;
+   
+}
+
+/* RESERTA A PAGINA*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    
+}
+html, body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header{
+    width: 100%;
+    height: 31.25rem;
+    background: var(--orange);
+}
+
+.content{
+    max-width: 62.5rem;
+    min-width: 18.75rem;
+    margin:  0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0.625rem;
+}
+nav{
+    width: 100%;
+    height: 7.813rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 2.438rem;
+    color: var(--blue);
+    cursor: pointer;
+    font-family: var(--font-primary);
+    text-shadow: 0.1rem 0rem 0rem rgb(5, 5, 5);
+
+}
+.logo:hover{
+    opacity: .3;
+    transition: 1s;
+   
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
+ nav ul li{
+     padding: 0.925rem;
+     font-weight: bolder;
+     
+     cursor: pointer;
+ }
+ nav ul li a{
+    color: var(--blue);
+    font-size: 1.2em;
+ }
+ nav ul li a:hover{
+     transition: 1s; 
+     color: white;
+ }
+ nav ul button{
+     cursor: pointer;
+     background: transparent;
+     width: 8rem;
+     color: var(--blue);
+     font-weight: bolder;
+     font-size: 1rem;
+     font-family: var(--font-secundary);
+     margin-left: 1.875rem;
+     border-radius: 1rem 0  2rem;
+     /*border:  0.063rem solid var(--blue);*/
+ }
+nav ul button:hover{
+    color: white;
+    background: var(--blue);
+    transition: 1s;
+}
+
+/*-------------------------------------------------------------------------*/
+
+.content .header-block{
+    max-width: 62.5rem;
+    min-width: 18.75rem;
+    height: 28.125rem;
+    background: var(--blue);
+    border-radius: 0.5rem;
+    box-shadow: 1px 0px 10px 0px rgba(0,0,0, 0.5);
+    -webkit-box-shadom: 1px 0px 10px 0px rgba(0,0,0, 0.5);
+    -moz-box-shadom: 1px 0px 10px 0px rgba(0,0,0, 0.5);
+    position: relative;
+    z-index: 10;
+    padding: 0.625rem;
+
+}
+.header-block img{
+    position: absolute;
+    width: 90%;
+    right: -10%;
+    bottom: 2%;
+}
+.header-block .text{
+    position: absolute;
+    bottom: 30%;
+    left: 10%;
+}
+.header-block .text h2 {
+    color: white;
+    margin-bottom:1.25rem;
+    text-align: right;
+    transform: translateX(-1.25rem);
+    transition: transform 2s;
+
+}
+.header-block .text p{
+    max-width:  280px;
+    color: white;
+    text-align: right;
+    transform: translateX(-1.25rem);
+    transition: transform 1s;
+}
+
+/*CATALOGO - CARROS*/
+
+section .catalogo{
+    width: 100vw;
+    padding: 100px;
+}
+section .filter-card{
+    width: 980px;
+    height: 150px;
+    background: var(--gray);
+    border-radius: 8px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-input{
+    width: 700px;
+    height: 50px;
+    border: none;
+    border-radius: 1rem 0rem 0rem 2rem;
+    padding: 2rem;
+    font-weight: bolder;
+
+}
+.search-button{
+    cursor: pointer;
+    width: 160px;
+    height: 65px;
+    border-radius: 0rem 0rem 2rem 0rem;
+    border: none;
+    background: var(--blue);
+    color: white;
+    font-size: 1.1em;
+    font-family: var(--font-secundary);
+    text-transform: uppercase;
+   
+}
+.search-button:hover{
+    background: var(--orange);
+    transition: 1s;
+    color: var(--blue);
+    font-weight: bolder;
+}
+
+.title-wrapper-catalog{
+    margin-top: 150px;
+    padding-bottom: 20x;
+    font-size: 1.5rem;
+    font-family: var(--font-secundary);
+}
+
+section .card-wrapper{
+    max-width: 1000px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    grid-gap: 30px;
+    padding: 50px;
+}
+section .card-item{
+    background: var(--gray);
+    height: 350px;
+    width: 290px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.card-content{
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.card-item img{
+    width: 85%;
+}
+.card-item h3{
+    text-transform: uppercase;
+    width: auto;
+    font-family: var(--font-secundary);
+    color: var(--blue);
+    text-shadow: 0.1rem 0rem 0rem rgb(240, 233, 233);
+
+}
+.card-item span{
+    color: var(--orange)
+}
+.card-item p{
+    width: 90%;
+    font-style: italic;
+    font-family: var(--font-secundary);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+}
+.card-item h1{
+    font-family: var(--font-primary);
+    color: rgb(255, 97, 5);
+    text-shadow: 0.1rem 0rem 0rem rgb(5, 5, 5);
+}
+.card-item button{
+    cursor: pointer;
+    width: 100%;
+    padding: 5px 0px;
+    margin-top: 1rem;
+    background: var(--blue);
+    border-radius: 0.3rem;
+    border: none;
+    color: white;
+    font-family: var(--font-secundary);
+    font-size: 1rem;
+    text-transform: uppercase;
+  
+}
+.card-item button:hover{
+    background: var(--orange);
+    transition: 0.8s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
